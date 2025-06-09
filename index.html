@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: hotpink;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>App Rico</h1>
+  <p>App Que Vai me Deixar Rico</p>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("sw.js")
+        .then(() => console.log("Serice Worker registrado com sucesso!"))
+        .catch(err => console.error("Erro ao registrar Service Worker: " + err));
+    } else {
+      console.log("Service Worker não é suportado neste navegador.");
+    }
+  </script>
+</body>
+
+</html>
