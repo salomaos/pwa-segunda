@@ -2,13 +2,13 @@ const CACHE_NAME = "my-cache-v1";
 
 const CACHE_ASSETS = [
     "/",
-    "/about.html",
-    "/app.js",
-    "/index.html",
-    "/manifest.json",
-    "/images/icons/icon-192x192.png",
-    "/images/icons/icon-512x512.png",
-    "/offline.html"
+    "/pwa-segunda/about.html",
+    "/pwa-segunda/app.js",
+    "/pwa-segunda/index.html",
+    "/pwa-segunda/manifest.json",
+    "/pwa-segunda/images/icons/icon-192x192.png",
+    "/pwa-segunda/images/icons/icon-512x512.png",
+    "/pwa-segunda/offline.html"
 ]
 
 self.addEventListener("install", (event) => {
