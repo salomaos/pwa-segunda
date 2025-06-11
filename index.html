@@ -20,17 +20,11 @@
 <body>
   <h1>App Rico</h1>
   <p>App Que Vai me Deixar Rico</p>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("sw.js")
-        .then(() => console.log("Serice Worker registrado com sucesso!"))
-        .catch(err => console.error("Erro ao registrar Service Worker: " + err));
-    } else {
-      console.log("Service Worker não é suportado neste navegador.");
-    }
-  </script>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/about.html">Sobre</a>
+  </nav>
+  <script src="app.js"></script>
 </body>
 
 </html>
